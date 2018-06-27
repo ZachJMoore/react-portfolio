@@ -69,7 +69,7 @@ body {
   .navigation-header{
     font-family: 'Spectral';
     font-size: 28px;
-    font-weight: 200;
+    font-weight: 300;
   }
 }
 
@@ -121,4 +121,64 @@ body {
 
 .work-header-image{
   width: 80%;
+}
+
+// contact
+
+.contact-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 50%;
+}
+
+.contact-location{
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    font-family: 'Spectral';
+    font-size: 62px;
+    margin: 0;
+  }
+
+  p{
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.contact-information{
+  display: flex;
+  flex-direction: column;
+
+  & > a {
+    font-size: 26px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: $secondary-text;
+
+    &:hover{
+      color: $secondary-text-hover
+    }
+  }
+}
+
+.contact-social{
+  display: flex;
+
+  a {
+    font-size: 26px;
+    text-decoration: none;
+    color: $secondary-text;
+
+    &:hover{
+      color: $secondary-text-hover
+    }
+
+    &::before{
+      margin: 10px 10px 0 0;
+    }
+  }
 }
