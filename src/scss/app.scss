@@ -1,0 +1,124 @@
+$main-bg: #FAFAFA;
+$main-text: rgb(241, 241, 241);
+$main-text-hover: rgb(210, 210, 210);
+$secondary-text: #121313;
+$secondary-text-hover: #2f3131;
+
+body {
+  background-color: $main-bg;
+
+  &::-webkit-scrollbar-track{
+    box-shadow: none;
+    background-color: #0000;
+  }
+
+  &::-webkit-scrollbar{
+    width: 8px;
+    background-color: $main-bg;
+  }
+
+  &::-webkit-scrollbar-thumb{
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+  }
+}
+
+.app-container{
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+// navigation
+
+.navigation{
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  min-height: 50px;
+  z-index: 50;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main-text;
+
+    &:hover{
+      color: $main-text-hover;
+    }
+  }
+
+  &.dark{
+    a {
+      color: $secondary-text;
+  
+      &:hover{
+        color: $secondary-text-hover;
+      }
+    }
+  }
+
+  .navigation-header{
+    font-family: 'Spectral';
+    font-size: 28px;
+    font-weight: 200;
+  }
+}
+
+// landing
+
+.landing-image{
+  background-image: url(../images/ceramic-vase.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 100%;
+  margin-top: -90px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    font-weight: bold;
+    font-size: 72px;
+    margin: 0;
+    color: $main-text;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(100deg, #0005, rgba(21, 94, 100, 0.397))
+  }
+}
+
+// work
+
+.work-container{
+  width: 90%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.work-header-image{
+  width: 80%;
+}

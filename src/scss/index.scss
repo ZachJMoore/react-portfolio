@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next LT Pro", sans-serif;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-It.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
