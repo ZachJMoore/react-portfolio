@@ -1,7 +1,7 @@
 $main-bg: #FAFAFA;
 $main-text: rgb(241, 241, 241);
 $main-text-hover: rgb(210, 210, 210);
-$secondary-text: #121313;
+$secondary-text: #272b2b;
 $secondary-text-hover: #2f3131;
 
 body {
@@ -18,7 +18,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb{
-    background-color: rgb(228, 228, 228);
+    background-color: #0001;
     border-radius: 10px;
   }
 }
@@ -121,6 +121,35 @@ body {
 
 .work-header-image{
   width: 80%;
+  height: 600px;
+  background-image: url("../images/code.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-weight: bold;
+    font-size: 72px;
+    margin: 0;
+    mix-blend-mode: hard-light;
+    color: rgba(61, 61, 61, 0.671);
+    z-index: 2;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(100deg, #0005, rgba(9, 147, 160, 0.397));
+  }
 }
 
 // contact
@@ -136,6 +165,7 @@ body {
 .contact-location{
   display: flex;
   flex-direction: column;
+  color: $secondary-text;
 
   h2{
     font-family: 'Spectral';

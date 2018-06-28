@@ -5,7 +5,9 @@ class Work extends Component {
   render() {
     return (
       <div className="work-container">
-        <img src={code} className="work-header-image"/>
+        <div src={code} className="work-header-image">
+            <h2>Work</h2>
+        </div>
       </div>
     );
   }
