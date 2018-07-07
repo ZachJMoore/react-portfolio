@@ -76,7 +76,7 @@ body {
 // landing
 
 .landing-image{
-  background-image: url(../images/ceramic-vase.jpg);
+  background-image: url(../images/landing-header.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
 // work
 
 .work-container{
-  width: 90%;
+  width: 100%;
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -120,10 +120,11 @@ body {
 }
 
 .work-header-image{
-  width: 80%;
-  min-height: 600px;
-  margin-top: 25px;
-  background-image: url("../images/code.jpg");
+  width: 90%;
+  height: calc(100vh - 160px);
+  margin: 25px 0;
+  margin-top: -90px;
+  background-image: url("../images/work-header.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -138,8 +139,9 @@ body {
     text-transform: uppercase;
     margin: 0;
     mix-blend-mode: hard-light;
-    color: rgba(61, 61, 61, 0.671);
+    color: rgba(255, 255, 255, 0.51);
     z-index: 2;
+    user-select: none;
   }
 
   &::after{
@@ -165,15 +167,28 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: calc(80% + 20px);
+  width: calc(90% + 32px);
+  padding: 15px;
 }
 
 .work-project-item{
   display: flex;
   flex-direction: column;
-  width: 30%;
-  // flex: 1;
-  margin: 20px 10px;
+  min-width: calc(30% - 32px);
+  flex: 1;
+  margin: 16px;
+  margin-top: 0;
+  text-decoration: none;
+  color: $secondary-text;
+
+  .work-project-title {
+    margin-top: 4px;
+    padding: 4px;
+    color: $secondary-text;
+    z-index: 2;
+    transition: opacity .5s;
+    font-size: 20px;
+  }
 
   div {
     background-size: cover;
@@ -181,21 +196,25 @@ body {
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    min-height: 250px;
+    min-height: 40vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    span {
-      font-weight: bold;
-      font-size: 32px;
-      text-transform: uppercase;
+    .work-project-description{
       margin: 0;
-      mix-blend-mode: hard-light;
-      color: rgba(255, 255, 255, 0.3);
+      padding: 4px;
+      color: $secondary-text;
       z-index: 2;
-      transition: color .5s;
+      transition: opacity .5s;
+      text-align: center;
+      opacity: 0;
+      font-size: 18px;
+      padding: 10px;
+      margin: 0;
+      text-align: center;
     }
 
     &::after{
@@ -205,7 +224,7 @@ body {
       left: 0;
       right: 0;
       bottom: 0;
-      // background-color: #fff3;
+      background-color: rgba(21, 84, 95, 0.1);
       transition: background-color .5s;
     }
 
@@ -217,24 +236,18 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #0000;
+        background-color: $main-bg;
       }
 
       span {
-        color: #0000;
+        opacity: 1;
+      }
+
+      & ~ .work-project-title{
+        opacity: 0;
       }
     }
   }
-}
-
-.work-project-title{
-  font-size: 24px;
-  margin: 10px 0 6px 0;
-}
-
-.work-project-description{
-  font-size: 18px;
-  color: #0007
 }
 
 // contact
