@@ -7,6 +7,10 @@ import Navigation from './Navigation';
 import projects from "../projects.js"
 import ProjectItemPage from "./ProjectItemPage"
 
+let onRouteEnter = ()=>{
+  window.scrollTo(0,0)
+}
+
 class App extends Component {
   render() {
     return (
@@ -17,7 +21,10 @@ class App extends Component {
         <Route exact path="/contact" render={()=><Contact />} />
         {projects.map((project, index)=>{
           return (
-            <Route exact path={"/work/" + project.pathname} render={()=><ProjectItemPage project={project}/>} key={index} />
+            <Route exact path={"/work/" + project.pathname} render={()=>{
+              onRouteEnter()
+              return <ProjectItemPage project={project}/>
+            }} key={index}/>
           )
         })}
       </div>

@@ -9,8 +9,8 @@ class ProjectItemPage extends Component{
                 </div>
                 <div className="project-body-container">
                     <div className="project-body-links">
-                        {this.props.project.links.demo && <a href={this.props.project.links.demo}>Demo</a>}
-                        {this.props.project.links.source && <a href={this.props.project.links.source}>Source code</a>}
+                        {this.props.project.links.demo && <a href={this.props.project.links.demo} target="_blank" rel="noopener noreferrer">Demo</a>}
+                        {this.props.project.links.source && <a href={this.props.project.links.source} target="_blank" rel="noopener noreferrer">Source code</a>}
                     </div>
                     {this.props.project.projectBody.map((data, index)=><ProjectBody data={data} key={index}/>)}
                 </div>
@@ -25,7 +25,7 @@ let ProjectBody = (props)=>{
 
     return (
         <div className="project-body-segment">
-            {imgSrc && <img src={imgSrc} />}
+            {imgSrc && <img alt="project" src={imgSrc} />}
             {imgDesc && <small>{imgDesc}</small>}
             {paragraphs.map((paragraph, index)=><p key={index}>{paragraph}</p>)}
         </div>

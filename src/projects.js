@@ -5,9 +5,9 @@ import weatherAppHeader from "./images/software/weather-app/weather-app-header-m
 import neighborhoodRestaurantsHeader from "./images/software/neighborhood-restaurants/neighborhood-restaurants-macbook-min.png";
 import memoryMatchHeader from "./images/software/memory-match/memory-match-header-min.jpg";
 import pomodoroTimerHeader from "./images/software/pomodoro-timer/pomodoro-timer-ipad-min.png";
-import crystallineCeramicsHeader from "./images/ceramics/crystalline-ceramics/crystalline-ceramics-header-min.jpg"
-import marbledCeramicHeader from "./images/ceramics/marbled-ceramics/marbled-ceramics-header-min.jpg"
-import PrintMoldingHeader from "./images/ceramics/3d-print-molding/3d-print-molding-header-min.jpg"
+// import crystallineCeramicsHeader from "./images/ceramics/crystalline-ceramics/crystalline-ceramics-header-min.jpg"
+// import marbledCeramicHeader from "./images/ceramics/marbled-ceramics/marbled-ceramics-header-min.jpg"
+// import PrintMoldingHeader from "./images/ceramics/3d-print-molding/3d-print-molding-header-min.jpg"
 
 let projects = [
   {
