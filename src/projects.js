@@ -1,5 +1,3 @@
-import React from "react"
-
 import smartKilnHeader from "./images/software/smart-kiln/smart-kiln-header.jpg";
 import smartKilnScreenshotLaptop from "./images/software/smart-kiln/screenshot-laptop.jpg";
 
@@ -34,8 +32,7 @@ let projects = [
             imgDesc: null,
             paragraphs: [
                 "The purpose behind this ongoing project is to create a better, smarter, cheaper, and more accessible kiln controller. Whether that be for ceramics, glass, curing, or any other application, my aim is to lower the cost while bringing a better experience for beginners and experienced craftsmen alike.",
-                "Using React, Node, Express, Firebase, and a Raspberry Pi, I was able to build a complete system for controlling, managing, and monitoring multiple kilns from a single webpage.",
-                "Each user can also add all of their firing schedules in one easy place with Firebase to easily share firing schedules across multiple kilns without the need to manually enter the same schedule in multiple places. Add it once and use it everywhere!"
+                "Using React, Node, Express, Firebase, and a Raspberry Pi, I was able to build a complete system for controlling, managing, and monitoring multiple kilns from a single webpage."
             ]
         },
         {
@@ -64,7 +61,10 @@ let projects = [
         {
             imgSrc: null,
             imgDesc: null,
-            paragraphs: []
+            paragraphs: [
+                "This project was built as way to familiarize myself and get a better understanding of using promises and API services. Everything was written in vanilla JavaScript, HTML, and CSS.",
+                "Using data from OpenWeatherMap, this webpage will display the current and 5 day weather forecast for a given zip code."
+            ]
         }
     ]
   },
@@ -86,7 +86,10 @@ let projects = [
         {
             imgSrc: null,
             imgDesc: null,
-            paragraphs: []
+            paragraphs: [
+                "This project is the final assignment for the Udacity front-end web developer nanodegree program. The challenge was to create a single page React app that incorporates both google maps, and another 3rd party API, which in this case is Zomato.",
+                "Neighborhood Restaurants allows you to search and filter through a list of restaurants, and get useful information in card format about each establishment. The restaurants are supplied by querying the Zomato API, which are then dynamically plotted onto google maps."
+            ]
         }
     ]
   },
@@ -108,7 +111,10 @@ let projects = [
         {
             imgSrc: null,
             imgDesc: null,
-            paragraphs: []
+            paragraphs: [
+                "Memory match is a simple game build from vanilla Javascript, HTML, and CSS.",
+                "This project was a way to start learning Javascript and build the logic behind comparing matches and keeping score."
+            ]
         }
     ]
   },
@@ -130,64 +136,67 @@ let projects = [
         {
             imgSrc: null,
             imgDesc: null,
-            paragraphs: []
+            paragraphs: [
+                "Pomodoro Timer was my answer to the lack of simple, clean, pomodoro timers for staying on task.",
+                "Everything was build from scratch using vanilla JavaScript, HTML, and CSS."
+            ]
         }
     ]
   },
-  {
-    headerImgSrc: crystallineCeramicsHeader,
-    title: "Crystalline",
-    shortDescription: "Growing Zinc Silicate crystals at 2225°F",
-    pathname: "crystalline-ceramics",
-    links: {
-        demo: null,
-        source: null
-    },
-    technologiesUsed: [],
-    projectBody: [
-        {
-            imgSrc: null,
-            imgDesc: null,
-            paragraphs: []
-        }
-    ]
-  },
-  {
-    headerImgSrc: marbledCeramicHeader,
-    title: "Marbled Ceramics",
-    shortDescription: "Visualizing the flow of black and white",
-    pathname: "marbled-ceramics",
-    links: {
-        demo: null,
-        source: null
-    },
-    technologiesUsed: [],
-    projectBody: [
-        {
-            imgSrc: null,
-            imgDesc: null,
-            paragraphs: []
-        }
-    ]
-  },
-  {
-    headerImgSrc: PrintMoldingHeader,
-    title: "3D Print Molding",
-    shortDescription: "Making precision molds from digital models",
-    pathname: "3d-print-molding",
-    links: {
-        demo: null,
-        source: null
-    },
-    technologiesUsed: [],
-    projectBody: [
-        {
-            imgSrc: null,
-            imgDesc: null,
-            paragraphs: []
-        }
-    ]
-  }
+//   {
+//     headerImgSrc: crystallineCeramicsHeader,
+//     title: "Crystalline",
+//     shortDescription: "Growing Zinc Silicate crystals at 2225°F",
+//     pathname: "crystalline-ceramics",
+//     links: {
+//         demo: null,
+//         source: null
+//     },
+//     technologiesUsed: [],
+//     projectBody: [
+//         {
+//             imgSrc: null,
+//             imgDesc: null,
+//             paragraphs: []
+//         }
+//     ]
+//   },
+//   {
+//     headerImgSrc: marbledCeramicHeader,
+//     title: "Marbled Ceramics",
+//     shortDescription: "Visualizing the flow of black and white",
+//     pathname: "marbled-ceramics",
+//     links: {
+//         demo: null,
+//         source: null
+//     },
+//     technologiesUsed: [],
+//     projectBody: [
+//         {
+//             imgSrc: null,
+//             imgDesc: null,
+//             paragraphs: []
+//         }
+//     ]
+//   },
+//   {
+//     headerImgSrc: PrintMoldingHeader,
+//     title: "3D Print Molding",
+//     shortDescription: "Making precision molds from digital models",
+//     pathname: "3d-print-molding",
+//     links: {
+//         demo: null,
+//         source: null
+//     },
+//     technologiesUsed: [],
+//     projectBody: [
+//         {
+//             imgSrc: null,
+//             imgDesc: null,
+//             paragraphs: []
+//         }
+//     ]
+//   }
 ]
 
 export default projects
