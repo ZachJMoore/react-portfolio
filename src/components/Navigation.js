@@ -5,16 +5,15 @@ class Navigation extends Component {
 
   constructor(props){
     super(props);
-    this.state = { classes: "navigation dark"}
+    this.state = { classes: "navigation"}
     this.getClasses = (pathname)=>{
       if (
-        pathname === "/" ||
-        pathname === "/work"
+        pathname === "/contact"
       ){
-        return "navigation"
+        return "navigation dark"
       }
 
-      return "navigation dark"
+      return "navigation"
     }
   }
 
