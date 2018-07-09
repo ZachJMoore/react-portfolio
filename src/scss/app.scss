@@ -40,13 +40,13 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 90%;
-  min-height: 50px;
+  height: 50px;
   z-index: 50;
 
   a {
     font-size: 16px;
     text-decoration: none;
-    width: 25%;
+    width: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,6 +94,7 @@ body {
   p {
     font-weight: bold;
     font-size: 72px;
+    text-align: center;
     margin: 0;
     color: $main-text;
     z-index: 2;
@@ -302,6 +303,7 @@ body {
 
 .project-body-container{
   width: 700px;
+  max-width: 90%;
   padding-bottom: 250px;
 }
 
@@ -350,6 +352,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 90%;
   height: 50vh;
 }
@@ -358,6 +361,7 @@ body {
   display: flex;
   flex-direction: column;
   color: $secondary-text;
+  margin: 0 30px;
 
   h2{
     font-family: 'Spectral';
@@ -403,4 +407,70 @@ body {
       margin: 10px 10px 0 0;
     }
   }
+}
+
+// Responsive
+
+@media screen and (max-width: 830px){
+
+  .navigation{
+
+    a{
+
+    }
+
+    .navigation-header{
+      font-size: 22px;
+    }
+  }
+
+  .landing-image{
+    p {
+      font-size: 48px;
+    }
+  }
+
+  .work-project-item{
+    min-width: calc(50% - 32px)
+  }
+}
+
+@media screen and (max-width: 550px){
+
+  .navigation{
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    a{
+      color: $secondary-text;
+    }
+  }
+
+  .landing-image{
+
+    margin-top: 0;
+
+    p {
+      font-size: 36px;
+    }
+  }
+
+  .work-header-image{
+    display: none;
+  }
+
+  .work-project-item{
+    min-width: calc(100% - 32px)
+  }
+
+  .project-header-image {
+
+    margin-top: 0;
+
+    span {
+      font-size: 36px;
+    }
+  }
+
 }
