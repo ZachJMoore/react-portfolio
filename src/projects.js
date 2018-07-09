@@ -1,13 +1,13 @@
-import smartKilnHeader from "./images/software/smart-kiln/smart-kiln-header.jpg";
+import smartKilnHeader from "./images/software/smart-kiln/smart-kiln-header-min.jpg";
 import smartKilnScreenshotLaptop from "./images/software/smart-kiln/screenshot-laptop.jpg";
 
-import weatherAppHeader from "./images/software/weather-app/weather-app-header.jpg";
-import neighborhoodRestaurantsHeader from "./images/software/neighborhood-restaurants/neighborhood-restaurants-macbook.png";
-import memoryMatchHeader from "./images/software/memory-match/memory-match-header.jpg";
-import pomodoroTimerHeader from "./images/software/pomodoro-timer/pomodoro-timer-ipad.png";
-import crystallineCeramicsHeader from "./images/ceramics/crystalline-ceramics/crystalline-ceramics-header.jpg"
-import marbledCeramicHeader from "./images/ceramics/marbled-ceramics/marbled-ceramics-header.jpg"
-import PrintMoldingHeader from "./images/ceramics/3d-print-molding/3d-print-molding-header.jpg"
+import weatherAppHeader from "./images/software/weather-app/weather-app-header-min.jpg";
+import neighborhoodRestaurantsHeader from "./images/software/neighborhood-restaurants/neighborhood-restaurants-macbook-min.png";
+import memoryMatchHeader from "./images/software/memory-match/memory-match-header-min.jpg";
+import pomodoroTimerHeader from "./images/software/pomodoro-timer/pomodoro-timer-ipad-min.png";
+import crystallineCeramicsHeader from "./images/ceramics/crystalline-ceramics/crystalline-ceramics-header-min.jpg"
+import marbledCeramicHeader from "./images/ceramics/marbled-ceramics/marbled-ceramics-header-min.jpg"
+import PrintMoldingHeader from "./images/ceramics/3d-print-molding/3d-print-molding-header-min.jpg"
 
 let projects = [
   {
