@@ -5,7 +5,7 @@ class Landing extends Component {
     return (
         <div className="landing-image">
             <p>Software Developer</p>
-            <p>& Ceramic Artist</p>
+            <p><span>&</span> Ceramic Artist</p>
         </div>
     );
   }

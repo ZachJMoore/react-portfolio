@@ -96,7 +96,7 @@ body {
     font-weight: bold;
     font-size: 72px;
     text-align: center;
-    margin: 0;
+    margin: 0 5px;
     color: $main-text;
     z-index: 2;
   }
@@ -454,6 +454,8 @@ body {
 
     p {
       font-size: 36px;
+      display: flex;
+      flex-direction: column;
     }
   }
 
