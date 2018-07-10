@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Spectral:200,300,400" rel="stylesheet">
+# Your Favicon Package
+
+This package was generated with [RealFaviconGenerator](https://realfavicongenerator.net/) [v0.16](https://realfavicongenerator.net/change_log#v0.16)
+
+## Install instructions
+
+To install this package:
+
+Extract this package in <code>&lt;web site&gt;<?php echo /icons/ ?></code>. If your site is <code>http://www.example.com</code>, you should be able to access a file named <code>http://www.example.com<?php echo /icons/ ?>favicon.ico</code>.
+
+Insert the following code in the `head` section of your pages:
+
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=Nm54bGnX6J">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?v=Nm54bGnX6J">
     <link rel="icon" type="image/png" sizes="194x194" href="/icons/favicon-194x194.png?v=Nm54bGnX6J">
@@ -15,12 +21,5 @@
     <meta name="msapplication-TileColor" content="#fefefe">
     <meta name="msapplication-config" content="/icons/browserconfig.xml?v=Nm54bGnX6J">
     <meta name="theme-color" content="#fefefe">
-    <title>Zach Moore</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-  </body>
-</html>
+
+*Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)

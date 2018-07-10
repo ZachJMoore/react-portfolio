@@ -62,7 +62,7 @@ let projects = [
             imgSrc: null,
             imgDesc: null,
             paragraphs: [
-                "This project was built as way to familiarize myself and get a better understanding of using promises and API services. Everything was written in vanilla JavaScript, HTML, and CSS.",
+                "This project was built as a way to familiarize myself and get a better understanding of using promises and API services. Everything was written in vanilla JavaScript, HTML, and CSS.",
                 "Using data from OpenWeatherMap, this webpage will display the current and 5 day weather forecast for a given zip code."
             ]
         }
@@ -112,7 +112,7 @@ let projects = [
             imgSrc: null,
             imgDesc: null,
             paragraphs: [
-                "Memory match is a simple game build from vanilla Javascript, HTML, and CSS.",
+                "Memory match is a simple game built from vanilla Javascript, HTML, and CSS.",
                 "This project was a way to start learning Javascript and build the logic behind comparing matches and keeping score."
             ]
         }
@@ -137,7 +137,7 @@ let projects = [
             imgSrc: null,
             imgDesc: null,
             paragraphs: [
-                "Pomodoro Timer was my answer to the lack of simple, clean, pomodoro timers for staying on task.",
+                "Pomodoro Timer is my answer to the lack of simple, clean pomodoro timers for staying on task.",
                 "Everything was build from scratch using vanilla JavaScript, HTML, and CSS."
             ]
         }
